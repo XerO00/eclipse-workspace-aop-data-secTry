@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 18 resources" deleteContents="false" description="Delete 18 resources" element1="/ps-jaxb-09-anno-lists-2" element10="/ps-jaxb-21-datetime" element11="/ps-jaxb-22-enum" element12="/ps-jaxb-23-validation-1" element13="/ps-jaxb-24-validation-2" element14="/ps-jaxb-25-inheritance" element15="/ps-jaxb-26-xmlany-1" element16="/ps-jaxb-28-binder" element17="/ps-jaxb-29-binder-moxy" element18="/ps-jaxb-30-maven-schemagen" element2="/ps-jaxb-10-anno-maps" element3="/ps-jaxb-11-anno-adapters" element4="/ps-jaxb-13-generateschema" element5="/ps-jaxb-15-required" element6="/ps-jaxb-17-nillable" element7="/ps-jaxb-18-objectfactory" element8="/ps-jaxb-19-xjc" element9="/ps-jaxb-20-bindings" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="18" stamp="1531655277880"/>
+</session>

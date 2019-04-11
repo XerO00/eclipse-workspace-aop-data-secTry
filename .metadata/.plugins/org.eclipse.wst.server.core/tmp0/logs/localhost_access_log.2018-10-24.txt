@@ -1,0 +1,12 @@
+127.0.0.1 - - [24/Oct/2018:19:27:02 +0530] "GET / HTTP/1.1" 404 1070
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:32:34 +0530] "GET /JsonDemo/webapi/messages HTTP/1.1" 404 1094
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:32:34 +0530] "GET /favicon.ico HTTP/1.1" 404 1081
+127.0.0.1 - - [24/Oct/2018:19:32:58 +0530] "GET /messenger/index.jsp HTTP/1.1" 404 1089
+127.0.0.1 - - [24/Oct/2018:19:38:57 +0530] "GET /messenger/index.jsp HTTP/1.1" 404 1089
+127.0.0.1 - - [24/Oct/2018:19:40:18 +0530] "GET /messenger/index.jsp HTTP/1.1" 404 1089
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:51:47 +0530] "GET /messenger/message HTTP/1.1" 404 1087
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:52:26 +0530] "GET /messenger/messages HTTP/1.1" 404 1088
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:54:59 +0530] "GET /messenger/messages HTTP/1.1" 404 1088
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:55:00 +0530] "GET /messenger/messages HTTP/1.1" 404 1088
+127.0.0.1 - - [24/Oct/2018:19:55:20 +0530] "GET /messenger/index.jsp HTTP/1.1" 404 1089
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:19:55:32 +0530] "GET /messenger/index.jsp HTTP/1.1" 404 1089

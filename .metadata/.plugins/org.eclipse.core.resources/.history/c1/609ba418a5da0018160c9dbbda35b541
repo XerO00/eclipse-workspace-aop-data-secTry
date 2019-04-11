@@ -1,0 +1,37 @@
+
+import javax.json.Json;
+import javax.json.JsonArray;
+import javax.json.JsonObject;
+import javax.json.JsonValue;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+
+@Path("dukes")
+//@RequestMapping("/dukes")
+public class DukesResources {
+
+@GET
+   // @RequestMapping("/dukes")
+	public JsonArray dukes() {
+		return Json.createArrayBuilder()
+				.add(duke("smart",18))
+				.add(duke("nice",38))
+				.build();
+	}
+
+	private JsonObject duke(String name, int age) {
+		// TODO Auto-generated method stub
+		return Json.createObjectBuilder()
+				.add("name",name)
+				.add("age",age)
+				.build();
+	}
+}
+/*
+
+export PATH=$PATH:JAVA_HOME/bin
+
+export JAVA_HOME=/home/prasanna/jdk1.8.0_172
+
+*/

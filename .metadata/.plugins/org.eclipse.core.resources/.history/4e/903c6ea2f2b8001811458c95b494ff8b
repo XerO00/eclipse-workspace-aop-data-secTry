@@ -1,0 +1,78 @@
+var Task = require('./task');
+
+var notificationService = function () {
+    var message = 'Notifying ';
+    this.update = function (task) {
+        console.log(message + task.user + ' for task ' + task.name);
+    }
+};
+var loggingService = function () {
+    var message = 'Logging '
+    this.update = function (task) {
+        console.log(message + task.user + ' for task ' + task.name);
+    }
+}
+var auditingService = function () {
+    var message = 'Auditing '
+    this.update = function (task) {
+        console.log(message + task.user + ' for task ' + task.name);
+    }
+};
+
+var mediator = (function(){
+    var channels = {};
+    console.log('inside the meditor');
+    var subscribe = function(channel, context, func){
+       console.log('Inside the subscribe ');
+    	if (!mediator.channels[channel]) {
+            mediator.channels[channel] = []
+            console.log('Inside the subcribe if '+channel);
+        }
+        mediator.channels[channel].push({
+            context: context,
+            func: func
+        });
+    };
+    
+    var publish = function(channel){
+    	console.log('Inside the publesh ');
+    	if (!this.channels[channel]) {
+            return false
+        }
+        
+        var args = Array.prototype.slice.call(arguments, 1);
+        
+        for(var i = 0; i < mediator.channels[channel].length; i++)
+        {
+            var sub = mediator.channels[channel][i];
+            sub.func.apply(sub.context, args)
+            console.log('Inside the publesh '+ sub);
+        }
+    }
+    return{
+        channels: {},
+        subscribe:subscribe,
+        publish:publish
+    };
+}());
+
+var task1 = new Task({
+    name: 'create a demo for mediators',
+    user: 'Jon'
+});
+
+console.log('Above the creating notify');
+var not = new notificationService();
+var ls = new loggingService();
+var audit = new auditingService();
+console.log('Below the creating notify');
+mediator.subscribe('complete', not, not.update);
+mediator.subscribe('complete', ls, ls.update);
+mediator.subscribe('complete', audit, audit.update);
+
+task1.complete = function(){
+	console.log('Inside the complete function');
+	mediator.publish('complete', this);
+    Task.prototype.complete.call(this);
+}
+task1.complete();

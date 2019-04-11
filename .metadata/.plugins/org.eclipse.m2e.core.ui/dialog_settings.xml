@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/home/prasanna/Downloads/ashish1991-demo-ef5de51e25e9"/>
+			<item value="/home/prasanna/Downloads/06/demos/demos/ps-jaxb-22-enum"/>
+			<item value="/home/prasanna/Downloads/06/demos/demos/ps-jaxb-21-datetime"/>
+			<item value="/home/prasanna/Downloads/06/demos/demos/ps-jaxb-20-bindings"/>
+			<item value="/home/prasanna/Downloads/06/demos/demos/ps-jaxb-19-xjc"/>
+			<item value="/home/prasanna/Downloads/05/demos/ps-jaxb-18-objectfactory"/>
+			<item value="/home/prasanna/Downloads/05/demos/ps-jaxb-17-nillable"/>
+			<item value="/home/prasanna/Downloads/05/demos/ps-jaxb-15-required"/>
+			<item value="/home/prasanna/Downloads/05/demos/ps-jaxb-13-generateschema"/>
+			<item value="/home/prasanna/Downloads/04/demos/ps-jaxb-11-anno-adapters"/>
+			<item value="/home/prasanna/Downloads/04/demos/ps-jaxb-10-anno-maps"/>
+			<item value="/home/prasanna/Downloads/04/demos/ps-jaxb-09-anno-lists-2"/>
+			<item value="/home/prasanna/Downloads/04/demos/ps-jaxb-08-anno-lists-1"/>
+			<item value="/home/prasanna/Downloads/04/demos/ps-jaxb-07-anno-enum"/>
+			<item value="/home/prasanna/Downloads/04/demos/ps-jaxb-06-anno-simpletypes"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

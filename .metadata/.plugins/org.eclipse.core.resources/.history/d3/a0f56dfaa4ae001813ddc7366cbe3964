@@ -1,0 +1,24 @@
+v
+
+/*/ES5
+
+require([jQuery], function(result){
+    jQuery = result;
+});
+ar Task= require('JSPS/task.js');
+
+*/
+var Task=define(function(require){
+    // this will work since RequireJS will treat module as CJS
+    console.log( require('dolor/amet') );
+});
+
+var task1 = new Task('create a demo for constructors');
+var task2 = new Task('create a demo for modules');
+var task3 = new Task('create a demo for singletons');
+var task4 = new Task('create a demo for prototypes');
+
+task1.complete();
+task2.save();
+task3.save();
+task4.save();

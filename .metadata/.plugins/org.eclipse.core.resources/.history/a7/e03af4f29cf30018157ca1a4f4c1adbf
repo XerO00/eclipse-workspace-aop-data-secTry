@@ -1,0 +1,131 @@
+package org.koushik.javabrains.dao;
+
+import java.sql.*;
+import javax.sql.DataSource;
+import javax.swing.tree.RowMapper;
+import javax.swing.tree.TreePath;
+
+import org.koushik.javabrains.model.Circle;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class JdbcDaoImpl {
+ 
+	    @Autowired
+	    private  DataSource dataSource ;
+	    
+		private JdbcTemplate jdbcTemplate = new JdbcTemplate();
+	    
+	    private  Connection connect = null;
+	    private  Statement statement = null;
+	    private  ResultSet resultSet = null;
+
+	    public  void getCircle() throws Exception {
+	        try {
+
+                System.out.println("above the connection process");                   
+	            connect = dataSource.getConnection();
+	            PreparedStatement statement = connect.prepareStatement("SELECT * from circle");
+	            resultSet = statement.executeQuery();
+	            
+	            while (resultSet.next()) {
+	                String id = resultSet.getString("id");
+	                String name = resultSet.getString("name");
+	                System.out.println("Printing From JDBC connection DAO class");
+	                System.out.println("ID: " + id);
+	                System.out.println("NAME: " + name);
+	            }
+	            
+	        } catch (Exception e) {
+
+                System.out.println("Inside the catch of connection");
+	        	e.printStackTrace();;
+	        } finally {
+
+                System.out.println("Inside finally");
+	        	close();
+	        
+	        }
+	    }
+
+	    private  void close() {
+	        try {
+
+                System.out.println("Indide close method");
+	            if (resultSet != null) {
+	                resultSet.close();
+	            }
+	            if (statement != null) {
+	                statement.close();
+	            }
+	            if (connect != null) {
+	                connect.close();
+	            }
+	        } catch (Exception e) {
+
+                System.out.println("Inside close catch");
+	        }
+
+	    }
+
+
+public DataSource getDataSource() {
+	return dataSource;
+}
+
+public void setDataSource(DataSource dataSource) {
+	this.jdbcTemplate = new JdbcTemplate(dataSource);
+}
+
+public JdbcTemplate getJdbcTemplate() {
+	return jdbcTemplate;
+}
+
+public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+	this.jdbcTemplate = jdbcTemplate;
+}
+
+
+public int getCirleCount() {
+	String sql ="SELECT COUNT(*) from circle";
+    jdbcTemplate.setDataSource(getDataSource());
+//	return jdbcTemplate.queryForList(sql);  
+   // int count = jdbcTemplate.queryForObject(sql, new Object[] {  }, Integer.class);   
+    return 0;
+}
+public String getCirleName(int circleId) {
+	System.out.println("getCircleName Method started");
+	String sql ="SELECT name from circle where id=1";
+
+	return   	jdbcTemplate.queryForObject(sql, String.class);
+	
+    //return jdbcTemplate.queryForObject(sql,new Object[] {circleId},String.class);
+ }
+
+public Circle getCirle(int circleId) {
+	System.out.println("getCircleName Method started");
+	String sql ="SELECT * from circle where id=1";
+
+	return  jdbcTemplate.queryForObject(sql,new Object[] {1}, );;
+	
+    //return jdbcTemplate.queryForObject(sql,new Object[] {circleId},String.class);
+ }
+
+private static final class CircleMapper implements RowMapper<Circle>{
+
+	@Override
+	public int[] getRowsForPaths(TreePath[] path) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
+
+}
+
+
+
+

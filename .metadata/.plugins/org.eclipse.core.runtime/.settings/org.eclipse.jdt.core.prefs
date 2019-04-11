@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=/home/prasanna/eclipse/eclipse/
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=/home/prasanna/jdk1.8.0_172/jre/lib/rt.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=/home/prasanna/jdk1.8.0_172/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=/home/prasanna/eclipse/eclipse/plugins/org.junit_4.12.0.v201504281640/
+org.eclipse.jdt.core.classpathVariable.M2_REPO=/home/prasanna/.m2/repository
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
+org.eclipse.jdt.core.compiler.compliance=1.8
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.source=1.8
+org.eclipse.jdt.core.userLibrary.AspectJ=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/home/prasanna/AspectJ/aopalliance-.jar"/>\n\t<archive path\="/home/prasanna/AspectJ/asm-all-3.3.1.jar"/>\n\t<archive path\="/home/prasanna/AspectJ/aspectj-1.9.2.jar"/>\n\t<archive path\="/home/prasanna/AspectJ/aspectjrt-1.9.2.jar"/>\n\t<archive path\="/home/prasanna/AspectJ/aspectj-weaver.jar"/>\n\t<archive path\="/home/prasanna/AspectJ/cglib-2.2.jar"/>\n</userlibrary>\n
+org.eclipse.jdt.core.userLibrary.DerbyJar=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/home/prasanna/DerbyJar/derbyclient-10.14.1.0.jar"/>\n\t<archive path\="/home/prasanna/DerbyJar/commons-dbcp-1.2.2.jar"/>\n\t<archive path\="/home/prasanna/DerbyJar/commons-dbcp2-2.5.0/commons-dbcp2-2.5.0.jar"/>\n\t<archive path\="/home/prasanna/DerbyJar/commons-pool2-2.6.0/commons-pool2-2.6.0.jar"/>\n\t<archive path\="/home/prasanna/DerbyJar/commons-dbcp2-2.5.0/commons-dbcp2-2.5.0-sources.jar"/>\n\t<archive path\="/home/prasanna/DerbyJar/spring-dao-2.0.6.jar"/>\n</userlibrary>\n
+org.eclipse.jdt.core.userLibrary.SpingLib=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/home/prasanna/Spring5.1.2/commons-logging-1.2.jar"/>\n\t<archive path\="/home/prasanna/Spring5.1.2/spring-aop-5.1.2.RELEASE.jar"/>\n\t<archive path\="/home/prasanna/Spring5.1.2/spring-aspects-5.1.2.RELEASE.jar"/>\n\t<archive path\="/home/prasanna/Spring5.1.2/spring-beans-5.1.2.RELEASE.jar"/>\n\t<archive path\="/home/prasanna/Spring5.1.2/spring-context-5.1.2.RELEASE.jar"/>\n\t<archive path\="/home/prasanna/Spring5.1.2/spring-context-support-5.1.2.RELEASE.jar"/>\n\t<archive path\="/home/prasanna/Spring5.1.2/spring-core-5.1.2.RELEASE.jar"/>\n\t<archive path\="/home/prasanna/Spring5.1.2/spring-expression-5.1.2.RELEASE.jar"/>\n\t<archive path\="/home/prasanna/Spring5.1.2/spring-instrument-5.1.2.RELEASE.jar"/>\n\t<archive path\="/home/prasanna/Spring5.1.2/spring-jdbc-5.1.2.RELEASE.jar"/>\n\t<archive path\="/home/prasanna/Spring5.1.2/spring-jms-5.1.2.RELEASE.jar"/>\n\t<archive path\="/home/prasanna/Spring5.1.2/spring-messaging-5.1.2.RELEASE.jar"/>\n\t<archive path\="/home/prasanna/Spring5.1.2/spring-orm-5.1.2.RELEASE.jar"/>\n</userlibrary>\n

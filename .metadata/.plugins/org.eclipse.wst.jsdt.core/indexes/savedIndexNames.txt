@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/home/prasanna/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3498418494.index
+2234677450.index
+119003003.index
+1509910404.index
+3902728867.index
+3798928582.index
+2101410419.index

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/prasanna/eclipse-workspace/SpringAopAroundAdviseAnnot"/>
+			<item value="/home/prasanna/eclipse-workspace/SpringAOP1"/>
+			<item value="/home/prasanna/eclipse-spring-workplace/SpringAOP"/>
+			<item value="/home/prasanna/eclipse-workspace/JsonDemo"/>
+			<item value="/home/prasanna/Downloads/ashish1991-demo"/>
+			<item value="/home/prasanna/AngularJS"/>
+			<item value="/home/prasanna/Documents/materials/JUnitUnzip4/demos/after/ProteinTrackerTests"/>
+			<item value="/home/prasanna/Documents/materials/JUnitUnzip4/demos/after/ProteinTracker"/>
+			<item value="/home/prasanna/Documents/materials/JUnitUnzip5/demos/after/ProteinTrackerTests"/>
+			<item value="/home/prasanna/Documents/materials/JUnitUnzip5/demos/after/ProteinTracker"/>
+			<item value="/home/prasanna/Documents/materials/JUnitUnzip2/demos/after/ProteinTrackerTests"/>
+			<item value="/home/prasanna/Documents/materials/JUnitUnzip2/demos/after/ProteinTracker"/>
+			<item value="/home/prasanna/Documents/materials/JUnitUnzip/demos/after/ProteinTrackerTests"/>
+			<item value="/home/prasanna/Documents/materials/JUnitUnzip/demos/after/ProteinTracker"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.jboss.tools.central.ui.wizard.category"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="344" key="DIALOG_X_ORIGIN"/>
+		<item value="174" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

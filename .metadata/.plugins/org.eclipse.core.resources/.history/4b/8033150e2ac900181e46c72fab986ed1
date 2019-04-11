@@ -1,0 +1,27 @@
+package com.angular2J2EEConnectionTest;
+
+import javax.json.Json;
+import javax.json.JsonArray;
+import javax.json.JsonValue;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+@Path("dukes")
+public class DukesResources {
+
+	@GET
+	public JsonArray dukes() {
+		return Json.createArrayBuilder()
+				.add(duke("smart",18))
+				.add(duke("nice",38))
+				.build();
+	}
+
+	private JsonObject duke(String string, int i) {
+		// TODO Auto-generated method stub
+		return Json.createObjectBuilder().
+				add(duke("name",name))
+				.add(duke("age",age))
+				.build();;
+	}
+}
