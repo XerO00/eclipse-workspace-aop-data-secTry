@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>             
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"  
+    xsi:schemaLocation=
+    "http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.1.xsd">   
+  
+  <context:annotation-config/>
+  <context:component-scan base-package="org.koushik.javabrains.*"/>
+  
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.apache.derby.jdbc.ClientDriver"/>
+        <property name="url" value="jdbc:derby://localhost:1527/db;create=true"/>
+    </bean>
+  
+   
+    <bean id="namedParameterJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+          <constructor-arg name="dataSource" ref="dataSource"/>
+    </bean>
+    
+    <bean id="HibernateDaoImpl" class="org.koushik.javabrains.dao.HibernateDaoImpl">
+    </bean>
+    
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+          <property name="dataSource" ref="dataSource"/>
+          <property name="packagesToScan" value="org.koushik.javabrains.model"/>
+          <property name="hibernateProperties" >
+              <props>
+                <prop key="dialect">org.hibernate.dialect.DerbyDialect</prop>
+              </props>
+          </property>
+    </bean>
+
+
+</beans>  
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.hibernate.SessionFactory org.koushik.javabrains.dao.HibernateDaoImpl.sessionFactory; nested exception is java.lang.NoClassDefFoundError: javax/transaction/TransactionManager
+LocalSessionFactoryBean
+ -->
